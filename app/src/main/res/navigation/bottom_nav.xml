@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/home_Dashboard">
+
+    <fragment
+        android:id="@+id/home_Dashboard"
+        android:name="com.example.earthquarkalartapp.views.dashboard.home.Home_Dashboard"
+        android:label="fragment_home__dashboard"
+        tools:layout="@layout/fragment_home__dashboard" />
+    <fragment
+        android:id="@+id/alart_Dashboard"
+        android:name="com.example.earthquarkalartapp.views.dashboard.alart.Alart_Dashboard"
+        android:label="fragment_alart__dashboard"
+        tools:layout="@layout/fragment_alart__dashboard" />
+    <fragment
+        android:id="@+id/setting_Dashboard"
+        android:name="com.example.earthquarkalartapp.views.dashboard.setting.Setting_Dashboard"
+        android:label="fragment_setting__dashboard"
+        tools:layout="@layout/fragment_setting__dashboard" />
+</navigation>

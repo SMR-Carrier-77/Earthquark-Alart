@@ -6,6 +6,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AuthActivity">
+    tools:context=".views.starter.AuthActivity">
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <androidx.fragment.app.FragmentContainerView
+      android:id="@+id/fragmentAuthentication"
+      android:name="androidx.navigation.fragment.NavHostFragment"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:defaultNavHost="true"
+      app:navGraph="@navigation/auth_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

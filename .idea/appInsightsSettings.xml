@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.earthquarkalartapp" />
+                  <option name="mobileSdkAppId" value="1:953849507146:android:ee2b37ed0e89509b4625b3" />
+                  <option name="projectId" value="earthquark-alart" />
+                  <option name="projectNumber" value="953849507146" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
