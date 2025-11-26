@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
+    tools:context=".views.starter.MainActivity"
+    android:fitsSystemWindows="true"
+    android:paddingHorizontal="@dimen/_16sdp"
     >
-   <ImageView
-       android:layout_width="match_parent"
-       android:layout_height="200dp"
-       android:layout_gravity="center"
-       android:src="@drawable/am"
-       />
-   <androidx.recyclerview.widget.RecyclerView
-       android:id="@+id/recycleView"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       tools:listitem="@layout/item"
 
+   <androidx.fragment.app.FragmentContainerView
+       android:id="@+id/fragmentDashboard"
+       android:name="androidx.navigation.fragment.NavHostFragment"
+       android:layout_width="0dp"
+       android:layout_height="0dp"
+       app:defaultNavHost="true"
+       app:navGraph="@navigation/bottom_nav"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toTopOf="@id/seller_bottom_NavigationView"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
 
-       />
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/seller_bottom_NavigationView"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       app:menu="@menu/bottom_menu"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"/>
 
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
