@@ -8,16 +8,47 @@
     <fragment
         android:id="@+id/home_Dashboard"
         android:name="com.example.earthquarkalartapp.views.dashboard.home.Home_Dashboard"
-        android:label="fragment_home__dashboard"
+        android:label="Home"
         tools:layout="@layout/fragment_home__dashboard" />
+
     <fragment
         android:id="@+id/alart_Dashboard"
         android:name="com.example.earthquarkalartapp.views.dashboard.alart.Alart_Dashboard"
-        android:label="fragment_alart__dashboard"
+        android:label="Alert"
         tools:layout="@layout/fragment_alart__dashboard" />
+
     <fragment
         android:id="@+id/setting_Dashboard"
         android:name="com.example.earthquarkalartapp.views.dashboard.setting.Setting_Dashboard"
-        android:label="fragment_setting__dashboard"
-        tools:layout="@layout/fragment_setting__dashboard" />
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting__dashboard" >
+        <action
+            android:id="@+id/action_setting_Dashboard_to_developerInfoFragment"
+            app:destination="@id/developerInfoFragment" />
+        <action
+            android:id="@+id/action_setting_Dashboard_to_delete_AccountFragment"
+            app:destination="@id/delete_AccountFragment" />
+        <action
+            android:id="@+id/action_setting_Dashboard_to_privacy_PolicyFragment"
+            app:destination="@id/privacy_PolicyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/developerInfoFragment"
+        android:name="com.example.earthquarkalartapp.views.dashboard.setting.options.DeveloperInfoFragment"
+        android:label="fragment_developer_info"
+        tools:layout="@layout/fragment_developer_info" />
+
+    <fragment
+        android:id="@+id/privacy_PolicyFragment"
+        android:name="com.example.earthquarkalartapp.views.dashboard.setting.Privacy_PolicyFragment"
+        android:label="fragment_privacy__policy"
+        tools:layout="@layout/fragment_privacy__policy" />
+
+    <fragment
+        android:id="@+id/delete_AccountFragment"
+        android:name="com.example.earthquarkalartapp.views.dashboard.setting.options.Delete_AccountFragment"
+        android:label="fragment_delete__account"
+        tools:layout="@layout/fragment_delete__account" />
+
 </navigation>

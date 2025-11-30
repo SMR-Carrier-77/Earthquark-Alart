@@ -4,9 +4,9 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
     card_view:cardCornerRadius="12dp"
     card_view:cardElevation="4dp"
+    android:layout_marginVertical="@dimen/_4sdp"
     android:foreground="?attr/selectableItemBackground">
 
     <LinearLayout
@@ -25,7 +25,6 @@
             android:src="@drawable/ic_number"
             android:layout_marginEnd="10dp"
             />
-
 
         <LinearLayout
             android:layout_width="0dp"

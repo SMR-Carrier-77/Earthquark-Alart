@@ -6,4 +6,6 @@
     </style>
 
     <style name="Theme.EarthQuarkAlartApp" parent="Base.Theme.EarthQuarkAlartApp" />
+
+    <style name="Theme.EarthQuarkAlartApp.App.Bar" parent="Theme.Material3.DayNight"/>
 </resources>

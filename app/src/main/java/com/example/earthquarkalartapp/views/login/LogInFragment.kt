@@ -10,7 +10,7 @@ import com.example.earthquarkalartapp.core.DataState
 import com.example.earthquarkalartapp.data.models.UserLogIn
 import com.example.earthquarkalartapp.databinding.FragmentLogInBinding
 import com.example.earthquarkalartapp.isEmpty
-import com.example.earthquarkalartapp.views.starter.MainActivity
+import com.example.earthquarkalartapp.views.dashboard.MainActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
