@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/myProductFragment"
+        android:id="@+id/home_Dashboard"
         android:icon="@drawable/ic_home"
         android:title="Home"
         />
 
     <item
-        android:id="@+id/uploadProductFragment"
+        android:id="@+id/alart_Dashboard"
         android:icon="@drawable/ic_alart"
         android:title="Alart"
         />
 
     <item
-        android:id="@+id/sellerProfileFragment"
+        android:id="@+id/setting_Dashboard"
         android:icon="@drawable/ic_setting"
         android:title="Setting"
         />

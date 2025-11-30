@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -78,5 +80,10 @@ dependencies {
     //dagger hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
+
+    // maplibre for google map
+    implementation(libs.maplibre)
+
+    implementation(libs.play.services.location)
 
 }

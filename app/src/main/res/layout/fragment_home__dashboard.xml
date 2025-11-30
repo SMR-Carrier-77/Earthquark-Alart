@@ -5,16 +5,18 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".views.starter.MainActivity"
+    tools:context=".views.dashboard.MainActivity"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:paddingHorizontal="@dimen/_8sdp"
     >
 
-    <ImageView
+    <org.maplibre.android.maps.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:src="@drawable/am"
+        android:layout_height="@dimen/_240sdp"
         />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"
         android:layout_width="match_parent"
